@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id ="app">
+        
+        <p>{{message}}</p> //Passing Dynamic Message from app.js using vue.js
+        <button v-on:click="show_hidden" >Click to Seen Hidden Message</button> // show is function in app.js which writen vues to do something after clicking the button
+      
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
