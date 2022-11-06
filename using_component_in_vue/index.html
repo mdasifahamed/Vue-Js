@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id ="app">
+        
+        <ol>  
+            <todo-course  //compoenet name whwre props is todo
+              v-for="course in courselist"  //loop throgh app objects
+              v-bind:todo="course"  // binding looping result with tplate in app.js template `<li>{{todo.text}}</li>`
+              v-bind:key="course.id"  // taking the key fro app.js from courselist list of objects
+            ></todo-course>  
+          </ol>  
+        </div>          
+      
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
